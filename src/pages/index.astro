@@ -4,66 +4,92 @@ import ProjectCard from "../components/ProjectCard.astro";
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
-const projects = await getCollection("projects");
+const projects: any[] = await getCollection("projects");
 ---
 
 <Layout>
   <main class="container mx-auto px-4 py-12">
-    <section class="bg-gradient-to-br from-blue-50 to-white shadow-xl rounded-2xl p-8 mb-16">
+    <section
+      class="bg-gradient-to-br from-blue-50 to-white shadow-xl rounded-2xl p-8 mb-16"
+    >
       <div class="container mx-auto px-4 text-center">
         <img
           src="/src/assets/escudo.png"
           alt="Escudo del club"
           class="block mx-auto py-6 w-32 h-auto"
         />
-        <h1 class="text-5xl font-bold text-gray-800 mb-8">Make Gimnasia Great Again</h1>
-        <div class="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto space-y-6">
+        <h1 class="text-5xl font-bold text-gray-800 mb-8">
+          Plantel Superior Gimnasia y Esgrima 2025
+        </h1>
+        <div
+          class="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto space-y-6"
+        >
           <p>
-            Como plantel superior, creemos que el crecimiento de nuestro club es un desafío que asumimos con pasión, dedicación y mucho compromiso.
+            Como plantel superior, creemos que el crecimiento de nuestro club es
+            un desafío que asumimos con pasión, dedicación y mucho compromiso.
           </p>
           <p>
-            Más allá de entrenar y jugar, queremos seguir mejorando nuestras instalaciones y optimizando cada espacio para que la actividad siga desarrollándose en las mejores condiciones.
+            Más allá de entrenar y jugar, queremos seguir mejorando nuestras
+            instalaciones y optimizando cada espacio para que la actividad siga
+            desarrollándose en las mejores condiciones.
           </p>
           <p>
-            Gracias al esfuerzo de todos los que formamos parte de esta gran familia, logramos importantes avances y hoy queremos compartir con ustedes los proyectos que nos permitirán seguir creciendo juntos.
+            Gracias al esfuerzo de todos los que formamos parte de esta gran
+            familia, logramos importantes avances y hoy queremos compartir con
+            ustedes los proyectos que nos permitirán seguir creciendo juntos.
           </p>
           <p>
-            Queremos mostrarles lo que ya conseguimos y los próximos pasos que soñamos concretar. El apoyo de ustedes es fundamental para alcanzar estos objetivos y llevar a nuestro club al lugar que se merece, brindándoles a nuestros jugadores un entorno óptimo para su desarrollo deportivo y personal.
+            Queremos mostrarles lo que ya conseguimos y los próximos pasos que
+            soñamos concretar. El apoyo de ustedes es fundamental para alcanzar
+            estos objetivos y llevar a nuestro club al lugar que se merece,
+            brindándoles a nuestros jugadores un entorno óptimo para su
+            desarrollo deportivo y personal.
           </p>
           <p>
-            La estructura es la base para que cada jugador se sienta cómodo y tenga todo lo necesario para disfrutar del rugby que tanto amamos. Esto no solo beneficia a quienes entrenan y compiten, sino a toda la familia del rugby, desde los infantiles que dan sus primeros pasos en el deporte hasta los jugadores más grandes y experimentados.
+            La estructura es la base para que cada jugador se sienta cómodo y
+            tenga todo lo necesario para disfrutar del rugby que tanto amamos.
+            Esto no solo beneficia a quienes entrenan y compiten, sino a toda la
+            familia del rugby, desde los infantiles que dan sus primeros pasos
+            en el deporte hasta los jugadores más grandes y experimentados.
           </p>
           <p>
-            Son espacios que todos usamos, disfrutamos y que hacen al crecimiento de nuestro club.
+            Son espacios que todos usamos, disfrutamos y que hacen al
+            crecimiento de nuestro club.
           </p>
         </div>
       </div>
     </section>
 
     <section class="mb-16">
-      <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">Nuestros Proyectos</h2>
+      <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">
+        Nuestros Proyectos
+      </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project) => {
-          const { slug, data } = project;
-          const { title, description, goal, amount_raised, status } = data;
+        {
+          projects.map((project) => {
+            const { slug, data } = project;
+            const { title, description, goal, amount_raised, status } = data;
 
-          return (
-            <ProjectCard
-              title={title}
-              description={description}
-              link={`proyectos/${slug}`}
-              goal={goal}
-              amount_raised={amount_raised}
-              status={status}
-            />
-          );
-        })}
+            return (
+              <ProjectCard
+                title={title}
+                description={description}
+                link={`proyectos/${slug}`}
+                goal={goal}
+                amount_raised={amount_raised}
+                status={status}
+              />
+            );
+          })
+        }
       </div>
     </section>
-    <InvestmentSummary />
+    <InvestmentSummary proyects={projects} />
   </main>
 
-  <footer class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-8 mt-16">
+  <footer
+    class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-8 mt-16"
+  >
     <div class="container mx-auto px-4">
       <p class="text-center text-lg">
         &copy; 2025 RugbyGimnasia PS. Todos los derechos reservados.
@@ -71,4 +97,3 @@ const projects = await getCollection("projects");
     </div>
   </footer>
 </Layout>
-

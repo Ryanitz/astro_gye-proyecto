@@ -1,0 +1,107 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  link: string;
+  goal: number;
+  amount_raised: number;
+  status: "not_started" | "in_progress" | "completed";
+}
+
+const { title, description, link, goal, amount_raised, status } = Astro.props;
+const progress = Math.min(Math.round((amount_raised / goal) * 100), 100);
+
+const statusConfig = {
+  not_started: {
+    text: "Sin iniciar",
+    classes: "bg-gray-100 text-gray-800 border-gray-200",
+  },
+  in_progress: {
+    text: "En progreso",
+    classes: "bg-blue-100 text-blue-800 border-blue-200",
+  },
+  completed: {
+    text: "Finalizada",
+    classes: "bg-green-100 text-green-800 border-green-200",
+  },
+};
+
+const { text, classes } = statusConfig[status];
+---
+
+<div
+  class="w-full bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1"
+>
+  <!-- Imagen y degradado -->
+  <div class="relative h-56 overflow-hidden rounded-t-2xl">
+    <img
+      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LySBLY6uCMPV3BNjejRL8lYivc5HGQ.png"
+      alt="Collage de eventos comunitarios"
+      class="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+    </div>
+  </div>
+
+  <!-- Contenido de la tarjeta -->
+  <div class="p-6">
+    <div class="flex flex-col mb-4">
+      <h2 class="text-2xl font-bold text-gray-800 mb-2 line-clamp-2">
+        {title}
+      </h2>
+      <span
+        class={`self-start inline-flex items-center rounded-full px-3 py-1 text-sm font-medium border ${classes}`}
+      >
+        {text}
+      </span>
+    </div>
+
+    <p class="text-gray-600 mb-6 line-clamp-3">
+      {description}
+    </p>
+
+    <div class="flex items-center justify-between mb-4">
+      <div>
+        <p class="text-3xl font-bold text-blue-600">
+          ${amount_raised.toLocaleString()}
+        </p>
+        <span class="text-sm text-green-600 font-semibold"
+          >{progress}% del objetivo</span
+        >
+      </div>
+      <div class="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6 text-yellow-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M7 3h10a1 1 0 0 1 1 1v4a5 5 0 0 1-5 5v3h4a1 1 0 1 1 0 2h-4v2h-4v-2H7a1 1 0 1 1 0-2h4v-3a5 5 0 0 1-5-5V4a1 1 0 0 1 1-1zM5 5a3 3 0 0 0 0 6M19 5a3 3 0 0 1 0 6"
+          ></path>
+        </svg>
+
+        <span class="text-sm text-gray-600 font-medium"
+          >Meta: ${goal.toLocaleString()}</span
+        >
+      </div>
+    </div>
+
+    <!-- Barra de progreso -->
+    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-6">
+      <div class="bg-blue-600 h-2.5 rounded-full" style={`width: ${progress}%`}>
+      </div>
+    </div>
+
+    <a
+      href={link}
+      class="block bg-blue-600 text-white text-center py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300 text-lg font-semibold"
+    >
+      Ver más
+    </a>
+  </div>
+</div>

@@ -5,20 +5,41 @@ import Layout from "../../layouts/Layout.astro";
 export async function getStaticPaths() {
   const projects = await getCollection("projects");
 
-  return projects.map((project) => ({
+  return projects.map((project: any) => ({
     params: { id: project.slug },
-    props: { project }
-  }))
+    props: { project },
+  }));
 }
 
 const { project } = Astro.props;
-const { data, slug } = project;
-const { title, description, goal, amount_raised, status } = data;
+const { data, id } = project;
+const {
+  title,
+  description,
+  goal,
+  amount_raised,
+  status,
+}: {
+  title: string;
+  description: string;
+  goal: number;
+  amount_raised: number;
+  status: "not_started" | "in_progress" | "completed";
+} = data;
 
 const statusConfig = {
-  not_started: { text: 'Sin iniciar', classes: 'bg-gray-100 text-gray-800 border-gray-200' },
-  in_progress: { text: 'En progreso', classes: 'bg-blue-100 text-blue-800 border-blue-200' },
-  completed: { text: 'Finalizada', classes: 'bg-green-100 text-green-800 border-green-200' }
+  not_started: {
+    text: "Sin iniciar",
+    classes: "bg-gray-100 text-gray-800 border-gray-200",
+  },
+  in_progress: {
+    text: "En progreso",
+    classes: "bg-blue-100 text-blue-800 border-blue-200",
+  },
+  completed: {
+    text: "Finalizada",
+    classes: "bg-green-100 text-green-800 border-green-200",
+  },
 };
 
 const { text: statusText, classes: statusClasses } = statusConfig[status];
@@ -31,10 +52,15 @@ const { Content } = await render(project);
 <Layout>
   <main class="max-w-4xl mx-auto px-4 py-12">
     <div class="mb-8 text-center">
-      <h1 transition:name={`title-${slug}`} class="text-5xl font-bold mb-8 text-center text-gray-800">
+      <h1
+        transition:name={`title-${id}`}
+        class="text-5xl font-bold mb-8 text-center text-gray-800"
+      >
         {title}
       </h1>
-      <span class={`inline-flex items-center rounded-full px-3 py-1 text-sm font-medium border ${statusClasses}`}>
+      <span
+        class={`inline-flex items-center rounded-full px-3 py-1 text-sm font-medium border ${statusClasses}`}
+      >
         {statusText}
       </span>
     </div>
@@ -42,26 +68,38 @@ const { Content } = await render(project);
     <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
       <div class="flex justify-between items-center mb-4">
         <div>
-          <p class="text-3xl font-bold text-blue-600">${amount_raised.toLocaleString()}</p>
-          <span class="text-sm text-green-600 font-semibold">{progress}% del objetivo</span>
+          <p class="text-3xl font-bold text-blue-600">
+            ${amount_raised.toLocaleString()}
+          </p>
+          <span class="text-sm text-green-600 font-semibold"
+            >{progress}% del objetivo</span
+          >
         </div>
         <div class="text-right">
-          <p class="text-xl font-semibold text-gray-700">Meta: ${goal.toLocaleString()}</p>
+          <p class="text-xl font-semibold text-gray-700">
+            Meta: ${goal.toLocaleString()}
+          </p>
         </div>
       </div>
       <div class="w-full bg-gray-200 rounded-full h-2.5">
-        <div class="bg-blue-600 h-2.5 rounded-full" style={`width: ${progress}%`}></div>
+        <div
+          class="bg-blue-600 h-2.5 rounded-full"
+          style={`width: ${progress}%`}
+        >
+        </div>
       </div>
     </div>
-    
+
     <div class="prose prose-lg prose-indigo mx-auto mb-12">
       <Content />
     </div>
     <div class="flex justify-center">
-      <a href="/" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 text-lg font-semibold">
+      <a
+        href="/"
+        class="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 text-lg font-semibold"
+      >
         Volver al inicio
       </a>
     </div>
   </main>
 </Layout>
-

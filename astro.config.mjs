@@ -1,13 +1,13 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://gdelpo.github.io',
-  base: 'astro_gye-proyecto',
+  site: "https://gdelpo.github.io",
+  base: "",
   vite: {
-    plugins: [tailwindcss()]
-  }
-})
+    plugins: [tailwindcss()],
+  },
+});

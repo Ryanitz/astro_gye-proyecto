@@ -4,6 +4,7 @@ description: Mejoras en el gimnasio para potenciar el rendimiento de nuestros ju
 goal: 4253000
 amount_raised: 4253000
 status: completed
+image: /sum/gimnasio.png
 ---
 
 ## 🏋️‍♂️ Inversiones y mejoras en el SUM
@@ -14,14 +15,18 @@ Hemos trabajado para mejorar nuestro gimnasio (SUM), incorporando equipamiento d
 
 📌 **Fuerza y levantamiento**  
 ✅ **5 barras olímpicas de 20 kg** = $685.000  
+✅ **1 porta barra vertical** = $130.000
+![Barras](/sum/barras.png)
 ✅ **400 kg en discos de fundición** = $920.000  
 ✅ **1 porta disco** = $150.000  
-✅ **1 porta barra vertical** = $130.000
+![Discos](/sum/discos.png)
 
 📌 **Entrenamiento funcional**  
 ✅ **Mancuernas engomadas hexagonales** = $1.605.000  
-✅ **7 med ball** = $85.000  
 ✅ **4 trineos de empuje** = $550.000
+![Mancuernas](/sum/mancuernas.png)
+✅ **7 med ball** = $85.000  
+![Pelotas](/sum/pelotas.png)
 
 📌 **Accesorios y materiales complementarios**  
 ✅ **Material general para entrenamiento (12 varillas)** = $220.000  
@@ -29,7 +34,7 @@ Hemos trabajado para mejorar nuestro gimnasio (SUM), incorporando equipamiento d
 
 **💰 Total de inversión:** $4.253.000
 
-## 📷 Transformación del SUM
+<!-- ## 📷 Transformación del SUM -->
 
 <!-- ![Nuevas incorporaciones](ruta-a-la-imagen1.jpg)
 *Equipamiento adquirido para potenciar los entrenamientos.*

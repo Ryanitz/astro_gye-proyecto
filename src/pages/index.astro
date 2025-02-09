@@ -1,4 +1,8 @@
 ---
+title: "Your Title";
+description: "Your Description";
+
+import Contact from "../components/Contact.astro";
 import InvestmentSummary from "../components/InvestmentSummary.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import Layout from "../layouts/Layout.astro";
@@ -14,7 +18,7 @@ const projects: any[] = await getCollection("projects");
     >
       <div class="container mx-auto px-4 text-center">
         <img
-          src="/src/assets/escudo.png"
+          src="/escudo.png"
           alt="Escudo del club"
           class="block mx-auto py-6 w-32 h-auto"
         />
@@ -68,7 +72,8 @@ const projects: any[] = await getCollection("projects");
         {
           projects.map((project) => {
             const { slug, data } = project;
-            const { title, description, goal, amount_raised, status } = data;
+            const { title, description, goal, amount_raised, status, image } =
+              data;
 
             return (
               <ProjectCard
@@ -78,6 +83,7 @@ const projects: any[] = await getCollection("projects");
                 goal={goal}
                 amount_raised={amount_raised}
                 status={status}
+                image={image}
               />
             );
           })
@@ -85,6 +91,7 @@ const projects: any[] = await getCollection("projects");
       </div>
     </section>
     <InvestmentSummary proyects={projects} />
+    <Contact />
   </main>
 
   <footer

@@ -1,4 +1,6 @@
 ---
+title: "Your Title";
+description: "Your Description";
 export interface Props {
   title: string;
   description: string;
@@ -6,9 +8,11 @@ export interface Props {
   goal: number;
   amount_raised: number;
   status: "not_started" | "in_progress" | "completed";
+  image: string;
 }
 
-const { title, description, link, goal, amount_raised, status } = Astro.props;
+const { title, description, link, goal, amount_raised, status, image } =
+  Astro.props;
 const progress = Math.min(Math.round((amount_raised / goal) * 100), 100);
 
 const statusConfig = {
@@ -35,8 +39,8 @@ const { text, classes } = statusConfig[status];
   <!-- Imagen y degradado -->
   <div class="relative h-56 overflow-hidden rounded-t-2xl">
     <img
-      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LySBLY6uCMPV3BNjejRL8lYivc5HGQ.png"
-      alt="Collage de eventos comunitarios"
+      src={image}
+      alt={title}
       class="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
     />
     <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">

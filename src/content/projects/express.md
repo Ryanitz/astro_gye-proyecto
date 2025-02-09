@@ -4,6 +4,7 @@ description: Renovación del quincho "Express" para un espacio más moderno y fu
 goal: 15000000
 amount_raised: 7200000
 status: in_progress
+image: /express/plano1.png
 ---
 
 ## 🏉 Renovación del "Express"
@@ -15,21 +16,33 @@ Las obras ya comenzaron con el objetivo de tenerlo listo antes del primer partid
 ## 🔨 Mejoras planificadas
 
 📌 **Infraestructura y diseño**  
-✅ Reemplazo de **aberturas** para mejorar la iluminación y la ventilación.  
-✅ Instalación de **nuevas luminarias** para una mejor ambientación.  
+✅ Reemplazo de **aberturas** para mejorar la iluminación y la ventilación.
+![Aberturas](/express/aberturas.png)
+✅ Instalación de **nuevas luminarias** para una mejor ambientación.
+![Luminarias](/express/luminarias.png)
 ✅ Renovación del **mobiliario** para mayor comodidad.
+![Muebles](/express/muebles.png)
 
 📌 **Obras principales**  
 ✅ Construcción de una nueva **barra de cemento alisado**.  
+![Barra](/express/barra.png)
 ✅ Instalación de un **hogar a leña** en el sector "living".  
+![Chimenea](/express/chimenea.png)
 ✅ Incorporación de **puertas corredizas tipo granero** para mayor integración de los espacios.
+![Puerta](/express/puerta.png)
 
 📌 **Detalles adicionales**  
-✅ **Pintura total** del salón.  
-✅ Aplicación de **cemento alisado** sobre la barra existente frente a la parrilla.  
+✅ **Pintura total** del salón.
+✅ Aplicación de **cemento alisado** sobre la barra existente frente a la parrilla.
 ✅ **Revestimiento de paredes** del sector "living", incluyendo la eliminación de la persiana en desuso.
 
 ## 📷 Avance de obras
+
+<!-- ✅ **Compra de materiales** y entrega para comenzar con la construccion.
+![Materiales](/express/avance1.png) -->
+
+✅ **Desarmado de la barra** del salón y la cocina para luego comenzar con las nuevas barras de cemento alisado.
+![Espacio para la barra](/express/avance1.png)
 
 <!-- ![Obras en proceso](ruta-a-la-imagen1.jpg)
 *Estado actual de la renovación del "Express".*

@@ -1,0 +1,32 @@
+---
+const donatingFamilies = [
+  { name: "Russo" },
+  { name: "Itzcovitz" },
+  { name: "Waisberg" },
+  { name: "Stratiotis" },
+  { name: "Formia" },
+  { name: "Delponte" },
+  { name: "Nieto" },
+  { name: "Hurtado" },
+  { name: "Karpowicz" },
+  { name: "Castañeda Paz" },
+  { name: "Deagusto" },
+];
+---
+
+<section
+  class="bg-gradient-to-br from-blue-50 to-white shadow-xl rounded-2xl p-8"
+>
+  <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">
+    Todas estas familias ya colaboraron
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    {
+      donatingFamilies.map(({ name }) => (
+        <div class="text-center p-6 bg-white rounded-xl shadow-md">
+          <h3 class="text-2xl font-semibold mb-4 text-gray-700">{name}</h3>
+        </div>
+      ))
+    }
+  </div>
+</section>

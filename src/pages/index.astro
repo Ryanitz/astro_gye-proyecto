@@ -6,6 +6,7 @@ import Contact from "../components/Contact.astro";
 import InvestmentSummary from "../components/InvestmentSummary.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import Layout from "../layouts/Layout.astro";
+import Donations from "../components/Donations.astro";
 import { getCollection } from "astro:content";
 
 const projects: any[] = await getCollection("projects");
@@ -92,6 +93,7 @@ const projects: any[] = await getCollection("projects");
     </section>
     <InvestmentSummary proyects={projects} />
     <Contact />
+    <Donations />
   </main>
 
   <footer

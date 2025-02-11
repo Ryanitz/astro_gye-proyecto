@@ -24,26 +24,10 @@ const formatPhoneNumber = (phone: string) => phone.replace(/\D/g, ""); // Elimin
   class="bg-gradient-to-br from-blue-50 to-white shadow-xl rounded-2xl p-8 mb-16"
 >
   <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">
-    Si querés ser parte del cambio o tenés alguna sugerencia, escribinos. ¡Todo
+    Si querés ser parte del cambio o tenés alguna sugerencia, escribinos.<br>¡Todo
     suma!
   </h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    {
-      contacts.map(({ name, phone }) => (
-        <div class="text-center p-6 bg-white rounded-xl shadow-md">
-          <h3 class="text-2xl font-semibold mb-4 text-gray-700">{name}</h3>
-          <p class="text-2xl font-bold text-gray-900 mb-4">{phone}</p>
-          <a
-            href={`https://wa.me/${formatPhoneNumber(phone)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 px-4 py-2 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 transition"
-          >
-            📲 Escribir por WhatsApp
-          </a>
-        </div>
-      ))
-    }
     {
       contacts.map(({ name, phone }) => (
         <div class="text-center p-6 bg-white rounded-xl shadow-md">

@@ -2,7 +2,7 @@
 title: Proyecto "Express"
 description: Renovación del quincho "Express" para un espacio más moderno y funcional.
 goal: 15000000
-amount_raised: 7200000
+amount_raised: 7470000
 status: in_progress
 image: /express/plano1.png
 ---
@@ -38,20 +38,11 @@ Las obras ya comenzaron con el objetivo de tenerlo listo antes del primer partid
 
 ## 📷 Avance de obras
 
-<!-- ✅ **Compra de materiales** y entrega para comenzar con la construccion.
-![Materiales](/express/avance1.png) -->
-
 ✅ **Desarmado de la barra** del salón y la cocina para luego comenzar con las nuevas barras de cemento alisado.
 ![Espacio para la barra](/express/avance1.png)
 
-<!-- ![Obras en proceso](ruta-a-la-imagen1.jpg)
-*Estado actual de la renovación del "Express".*
-
-![Diseño proyectado](ruta-a-la-imagen2.jpg)
-*Visualización del espacio renovado.*   -->
-
 ---
 
-Con estas mejoras, el "Express" será un lugar que fortalezca nuestro sentido de comunidad, donde cada reunión y tercer tiempo se sienta aún más especial. ¡Sigamos construyendo juntos este espacio para el club! 💙🏉🔥
+Con estas mejoras, el "Express" será un lugar que fortalezca nuestro sentido de pertenencia, donde cada comida y tercer tiempo se sienta más especial. ¡Sigamos construyendo juntos este espacio para el club! 💙🏉🔥
 
 🚀 **¡Sumate a la transformación del Express!**

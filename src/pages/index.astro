@@ -11,83 +11,49 @@ const year = new Date().getFullYear();
 ---
 
 <Layout>
-  <main class="container mx-auto px-4 py-12">
-    <section
-      class="bg-gradient-to-br from-blue-50 to-white shadow-xl rounded-2xl p-8 mb-16"
-    >
+  <main class="container mx-auto px-4 py-16">
+    <section class="bg-gradient-to-br from-blue-50 to-white shadow-lg rounded-2xl p-10 mb-16 animate-fade-in">
       <div class="container mx-auto px-4 text-center">
-        <img
-          src="/escudo.png"
-          alt="Escudo del club"
-          class="block mx-auto py-6 w-32 h-auto"
-        />
-        <h1 class="text-5xl font-bold text-gray-800 mb-8">
-          Plantel Superior Gimnasia y Esgrima 2025
-        </h1>
-        <div
-          class="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto space-y-6"
-        >
-          <p>
-            Como plantel superior, asumimos con pasión y compromiso el desafío
-            de hacer crecer nuestro club.
-          </p>
-          <p>
-            Más allá de jugar, buscamos mejorar nuestras instalaciones para
-            brindar las mejores condiciones a todos.
-          </p>
-          <p>
-            Gracias al esfuerzo de esta gran familia, logramos avances
-            importantes y queremos compartir con ustedes los próximos proyectos.
-          </p>
-          <p>
-            Por ese motivo su apoyo es clave para seguir creciendo y ofrecer a
-            nuestros jugadores un entorno óptimo para su desarrollo deportivo y
-            personal. La estructura es fundamental para que cada jugador
-            disfrute del rugby, desde infantiles hasta los más experimentados.
-          </p>
-          <p>
-            Estos espacios nos pertenecen a todos y juntos los hacemos crecer.
-          </p>
+        <img src="/escudo.png" alt="Escudo del club" class="block mx-auto py-6 w-32 h-auto hover:scale-110 transition-transform duration-300"/>
+        <h1 class="text-5xl font-bold text-gray-900 mb-6">Plantel Superior Gimnasia y Esgrima 2025</h1>
+        <div class="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto space-y-6">
+          <p>En el Plantel Superior, nos comprometemos a hacer crecer nuestro club con pasión y esfuerzo.</p>
+          <p>Buscamos mejorar nuestras instalaciones para brindar un mejor entorno a todos los jugadores. Gracias al apoyo de esta gran familia, logramos avances importantes y queremos compartir los próximos proyectos.</p>
+          <p>Tu ayuda es fundamental para seguir creciendo y ofrecer a cada jugador un espacio donde desarrollarse dentro y fuera de la cancha. Estos proyectos nos pertenecen a todos, ¡hagámoslos realidad juntos!</p>
         </div>
       </div>
     </section>
-
     <section class="mb-16">
-      <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">
-        Nuestros Proyectos
-      </h2>
+      <h2 class="text-4xl font-bold mb-10 text-center text-gray-900">Nuestros Proyectos</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {
-          projects.map((project) => {
-            const { slug, data } = project;
-            const { title, description, goal, amount_raised, status, image } =
-              data;
+        {projects.map((project) => {
+          const { slug, data } = project;
+          const { title, description, goal, amount_raised, status, image } = data;
 
-            return (
-              <ProjectCard
-                title={title}
-                description={description}
-                link={`proyectos/${slug}`}
-                goal={goal}
-                amount_raised={amount_raised}
-                status={status}
-                image={image}
-              />
-            );
-          })
-        }
+          return (
+            <ProjectCard
+              title={title}
+              description={description}
+              link={`proyectos/${slug}`}
+              goal={goal}
+              amount_raised={amount_raised}
+              status={status}
+              image={image}
+            />
+          );
+        })}
       </div>
     </section>
+
     <InvestmentSummary proyects={projects} />
     <Contact />
     <Donations />
   </main>
 
-  <footer
-    class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-8 mt-16"
-  >
+  <footer class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-6 mt-16">
     <div class="container mx-auto px-4">
       <p class="text-center text-lg">{year} - Rugby Gimnasia - PS</p>
     </div>
   </footer>
 </Layout>
+

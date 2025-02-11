@@ -20,14 +20,15 @@ const donatingFamilies = [
 const sortedFamilies = donatingFamilies.sort((a, b) => a.localeCompare(b));
 ---
 
-<section class="bg-gradient-to-br from-blue-50 to-white shadow-xl rounded-2xl p-8">
-  <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">
+<section class="bg-gradient-to-br from-blue-50 to-white shadow-lg rounded-2xl p-10 animate-fade-in">
+  <h2 class="text-4xl font-bold mb-8 text-center text-gray-900">
     Todas estas familias ya colaboraron
   </h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
     {sortedFamilies.map((name) => (
-      <div class="text-center p-6 bg-gray-100 rounded-xl shadow-md transition transform hover:scale-105 hover:bg-gray-200">
-        <h3 class="text-2xl capitalize font-semibold text-gray-700">{name}</h3>
+      <div class="text-center p-6 bg-gray-100 rounded-xl shadow-lg transition-all transform hover:scale-105 hover:bg-gray-200 hover:shadow-xl">
+        <h3 class="text-2xl capitalize font-semibold text-gray-900">{name}</h3>
       </div>
     ))}
   </div>

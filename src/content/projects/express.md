@@ -40,6 +40,15 @@ Las obras ya comenzaron con el objetivo de tenerlo listo antes del primer partid
 
 ✅ **Desarmado de la barra** del salón y la cocina para luego comenzar con las nuevas barras de cemento alisado.
 ![Espacio para la barra](/express/avance1.png)
+✅ **Comenzaron con el sector de entrenadores** Ya se sacaron las placas de madera negras que rodeaban el sector y comenzaron con la primer mano de pintura para dejarlo impecable!.
+<video controls width="600" style="display:none">
+
+  <source src="/express/avance2.webm">
+</video>
+<video controls style="width: 100%; max-width: 600px; margin: auto;">
+
+  <source src="/express/avance2.webm">
+</video>
 
 ---
 

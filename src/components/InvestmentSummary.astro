@@ -16,33 +16,48 @@ const totalInvestment = proyects.reduce(
   (acc, { data: { amount_raised } }) => acc + amount_raised,
   0
 );
-const goalAmount = proyects.reduce(
-  (acc, { data: { goal } }) => acc + goal,
-  0
-);
+const goalAmount = proyects.reduce((acc, { data: { goal } }) => acc + goal, 0);
 const percentageRaised = Math.min((totalInvestment / goalAmount) * 100, 100); // Máx 100%
 const addDotsToNumber = (number: number) =>
   number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 ---
 
-<section class="bg-gradient-to-br from-blue-50 to-white shadow-lg rounded-2xl p-10 mb-16">
-  <h2 class="text-4xl font-bold mb-8 text-center text-gray-900">Resumen de Inversiones</h2>
-  
+<section
+  class="bg-gradient-to-br from-blue-50 to-white shadow-lg rounded-2xl p-10 mb-16"
+>
+  <h2 class="text-4xl font-bold mb-8 text-center text-gray-900">
+    Resumen de Inversiones
+  </h2>
+
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
     <div class="text-center p-6 bg-white rounded-xl shadow-md">
-      <h3 class="text-2xl font-semibold mb-4 text-gray-700">Inversión hasta la fecha</h3>
-      <p class="text-5xl font-bold text-green-600 mb-2">${addDotsToNumber(4253000 + 1947126)}</p>
+      <h3 class="text-2xl font-semibold mb-4 text-gray-700">
+        Inversión hasta la fecha
+      </h3>
+      <p class="text-5xl font-bold text-green-600 mb-2">
+        ${addDotsToNumber(4253000 + 2682126)}
+      </p>
     </div>
 
     <div class="text-center p-6 bg-white rounded-xl shadow-md relative">
       <h3 class="text-2xl font-semibold mb-4 text-gray-700">Recaudado</h3>
-      <p class="text-5xl font-bold text-blue-600 mb-2 flex items-center justify-center">${addDotsToNumber(totalInvestment)}</p>
+      <p
+        class="text-5xl font-bold text-blue-600 mb-2 flex items-center justify-center"
+      >
+        ${addDotsToNumber(totalInvestment)}
+      </p>
 
       <div class="w-full bg-gray-200 rounded-full h-4 mt-4">
-        <div class="bg-blue-600 h-4 rounded-full transition-all duration-500" style={`width: ${percentageRaised}%;`}></div>
+        <div
+          class="bg-blue-600 h-4 rounded-full transition-all duration-500"
+          style={`width: ${percentageRaised}%;`}
+        >
+        </div>
       </div>
 
-      <p class="text-sm text-gray-500 mt-2">${percentageRaised.toFixed(1)}% de la meta alcanzada</p>
+      <p class="text-sm text-gray-500 mt-2">
+        ${percentageRaised.toFixed(1)}% de la meta alcanzada
+      </p>
     </div>
   </div>
 </section>

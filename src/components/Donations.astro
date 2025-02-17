@@ -1,26 +1,8 @@
 ---
-const donatingFamilies = [
-  "Russo",
-  "Itzcovitz",
-  "Waisberg",
-  "Stratiotis",
-  "Formia",
-  "Delponte",
-  "Nieto",
-  "Hurtado",
-  "Karpowicz",
-  "Castañeda Paz",
-  "Deagusto",
-  "Vega",
-  "Arbelais",
-  "Ziegler",
-  "Rodriguez Caputo",
-  "Recalde",
-  "Menéndez",
-  "Figueredo",
-  "Vitton",
-  "Avalos"
-];
+import datos from "../data/familias_montos.json";
+
+// Obtener nombres de familias desde el JSON, excluyendo "tipo de cambio avg"
+const donatingFamilies = Object.keys(datos).filter(name => name !== "tipo de cambio avg");
 
 // Ordenar familias alfabéticamente
 const sortedFamilies = donatingFamilies.sort((a, b) => a.localeCompare(b));

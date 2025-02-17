@@ -3,6 +3,7 @@ title: Proyecto SUM
 description: Mejoras en el gimnasio para potenciar el rendimiento de nuestros jugadores.
 goal: 4253000
 amount_raised: 4253000
+amount_used: 4253000
 status: completed
 image: /sum/gimnasio.png
 ---

@@ -11,6 +11,7 @@ export interface Props {
 
 const { title, description, link, goal, amount_raised, status, image } =
   Astro.props;
+  
 const progress = Math.min(Math.round((amount_raised / goal) * 100), 100);
 
 const statusConfig = {

@@ -8,6 +8,9 @@ import { getCollection } from "astro:content";
 
 const projects: any[] = await getCollection("projects");
 const year = new Date().getFullYear();
+
+// Calcular el total invertido sumando amount_used de cada proyecto
+const totalInvestment = projects.reduce((acc, project) => acc + (project.data.amount_used || 0), 0);
 ---
 
 <Layout>
@@ -45,7 +48,7 @@ const year = new Date().getFullYear();
       </div>
     </section>
 
-    <InvestmentSummary proyects={projects} />
+    <InvestmentSummary totalInvestment={totalInvestment} />
     <Contact />
     <Donations />
   </main>

@@ -11,12 +11,12 @@ export interface Props {
 
 const { title, description, link, goal, amount_raised, status, image } =
   Astro.props;
-  
+
 const progress = Math.min(Math.round((amount_raised / goal) * 100), 100);
 
 const statusConfig = {
   not_started: {
-    text: "Sin iniciar",
+    text: "Proximamente...",
     classes: "bg-gray-100 text-gray-800 border-gray-200",
   },
   in_progress: {
@@ -30,18 +30,32 @@ const statusConfig = {
 };
 
 const { text, classes } = statusConfig[status];
+const notStarted = status === "not_started";
+const notStartedBackgroundColor = "bg-gray-600";
+const startedBackgroundColor = "bg-blue-600";
+const notStartedTextColor = "text-gray-600";
+const startedTextColor = "text-blue-600";
 ---
 
-<div class="w-full bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+<div
+  class={`w-full bg-white rounded-2xl shadow-lg transition-all duration-300 transform ${status === "not_started" ? "" : "hover:shadow-2xl hover:-translate-y-1"}`}
+>
   <div class="relative h-56 overflow-hidden rounded-t-2xl">
-    <img src={image} alt={title} class="object-cover w-full h-full transition-transform duration-500 hover:scale-110"/>
-    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+    <img
+      src={image}
+      alt={title}
+      class="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+    </div>
   </div>
 
   <div class="p-6">
     <div class="flex flex-col mb-4">
       <h2 class="text-2xl font-bold text-gray-900 mb-2">{title}</h2>
-      <span class={`self-start inline-flex items-center rounded-full px-3 py-1 text-sm font-medium border ${classes}`}>
+      <span
+        class={`self-start inline-flex items-center rounded-full px-3 py-1 text-sm font-medium border ${classes}`}
+      >
         {text}
       </span>
     </div>
@@ -50,20 +64,39 @@ const { text, classes } = statusConfig[status];
 
     <div class="flex items-center justify-between mb-4">
       <div>
-        <p class="text-3xl font-bold text-blue-600">${amount_raised.toLocaleString()}</p>
-        <span class="text-sm text-green-600 font-semibold">{progress}% del objetivo</span>
+        <p
+          class={`text-3xl font-bold ${notStarted ? notStartedTextColor : startedTextColor}`}
+        >
+          ${amount_raised.toLocaleString()}
+        </p>
+        {
+          !notStarted && (
+            <span class="text-sm text-green-600 font-semibold">
+              {progress}% del objetivo
+            </span>
+          )
+        }
       </div>
       <div class="flex items-center gap-2">
         <span class="ml-2 text-yellow-500 text-xl">🏆</span>
-        <span class="text-sm text-gray-600 font-medium">Meta: ${goal.toLocaleString()}</span>
+        <span class="text-sm text-gray-600 font-medium"
+          >Meta: ${goal.toLocaleString()}</span
+        >
       </div>
     </div>
 
     <div class="w-full bg-gray-200 rounded-full h-2.5 mb-6">
-      <div class="bg-blue-600 h-2.5 rounded-full transition-all duration-500" style={`width: ${progress}%`}></div>
+      <div
+        class={`${notStarted ? notStartedBackgroundColor : startedBackgroundColor} h-2.5 rounded-full transition-all duration-500`}
+        style={`width: ${progress}%`}
+      >
+      </div>
     </div>
 
-    <a href={link} class="block bg-blue-600 text-white text-center py-3 px-4 rounded-lg hover:bg-blue-700 transition-transform duration-300 hover:scale-105 text-lg font-semibold">
+    <a
+      href={link}
+      class={`block cursor-pointer ${startedBackgroundColor + " hover:bg-blue-700 hover:scale-105"} text-white text-center py-3 px-4 rounded-lg transition-transform duration-300 text-lg font-semibold`}
+    >
       Ver más
     </a>
   </div>

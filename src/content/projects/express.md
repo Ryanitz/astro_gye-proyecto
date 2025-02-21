@@ -51,6 +51,13 @@ Las obras ya comenzaron con el objetivo de tenerlo listo antes del primer partid
   <source src="/express/avance2.webm">
 </video>
 
+✅ 21/02/2025 **¡Siguen los avances!**
+
+![Avance 21 de feb](/express/sum_21-02-2025_1.jpeg)
+![Avance 21 de feb](/express/sum_21-02-2025_2.jpeg)
+![Avance 21 de feb](/express/sum_21-02-2025_3.jpeg)
+![Avance 21 de feb](/express/sum_21-02-2025_4.jpeg)
+
 ---
 
 Con estas mejoras, el "Express" será un lugar que fortalezca nuestro sentido de pertenencia, donde cada comida y tercer tiempo se sienta más especial. ¡Sigamos construyendo juntos este espacio para el club! 💙🏉🔥

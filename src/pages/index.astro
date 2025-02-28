@@ -6,7 +6,14 @@ import Layout from "../layouts/Layout.astro";
 import Donations from "../components/Donations.astro";
 import { getCollection } from "astro:content";
 
-const projects: any[] = await getCollection("projects");
+const projects: any[] = (await getCollection("projects")).sort(
+  (a: any, b: any) => {
+    const statusOrder = ["in_progress", "completed", "not_started"];
+    return (
+      statusOrder.indexOf(a.data.status) - statusOrder.indexOf(b.data.status)
+    );
+  }
+);
 const year = new Date().getFullYear();
 
 // Calcular el total invertido sumando amount_used de cada proyecto

@@ -3,7 +3,7 @@ title: Proyecto "Express"
 description: Renovación del quincho "Express" para un espacio más moderno y funcional.
 goal: 15000000
 amount_raised: 11294767
-amount_used: 4500830
+amount_used: 5372830
 status: in_progress
 image: /express/plano1.png
 ---

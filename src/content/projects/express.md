@@ -2,7 +2,7 @@
 title: Proyecto "Express"
 description: Renovación del quincho "Express" para un espacio más moderno y funcional.
 goal: 15000000
-amount_raised: 11294767
+amount_raised: 11811767
 amount_used: 6862266
 status: in_progress
 image: /express/plano1.png
@@ -16,7 +16,7 @@ Las obras ya comenzaron con el objetivo de tenerlo listo antes del primer partid
 
 ## 🔨 Mejoras planificadas
 
-### Infraestructura y diseño  
+### Infraestructura y diseño
 
 - **Reemplazo de aberturas:** para mejorar la iluminación y la ventilación _(Por tiempos de entrega, se realizará en una segunda etapa o posterior al primer 3T)_.
   ![Aberturas](/express/aberturas.png)
@@ -25,8 +25,8 @@ Las obras ya comenzaron con el objetivo de tenerlo listo antes del primer partid
 - **Renovación del mobiliario:** para mayor comodidad.  
   ![Muebles](/express/muebles.png)
 - **Decoración:** para darle un toque personalizado al espacio _(Por tiempos de entrega, se realizará en una segunda etapa o posterior al primer 3T)_.
-  
-### Obras principales  
+
+### Obras principales
 
 - **Construcción de una nueva barra de cemento alisado.**  
   ![Barra](/express/barra.png)
@@ -35,7 +35,7 @@ Las obras ya comenzaron con el objetivo de tenerlo listo antes del primer partid
 - **Incorporación de puertas corredizas tipo granero:** para mayor integración de los espacios.  
   ![Puerta](/express/puerta.png)
 
-### Detalles adicionales  
+### Detalles adicionales
 
 - **Pintura total** del salón.
 - Aplicación de **cemento alisado** sobre la barra existente frente a la parrilla.
@@ -78,12 +78,12 @@ Además de las mejoras planificadas, se han llevado a cabo tareas específicas e
 
 - **Desarmado de la barra** del salón y la cocina para comenzar con las nuevas barras de cemento alisado.  
   ![Espacio para la barra](/express/avance1.png)
-- **Sector de entrenadores:** Se retiraron las placas de madera negras y se aplicó la primera mano de pintura para dejarlo impecable.  
+- **Sector de entrenadores:** Se retiraron las placas de madera negras y se aplicó la primera mano de pintura para dejarlo impecable.
 
   <video controls style="width: 100%; max-width: 600px; margin: auto;">
     <source src="/express/avance2.webm">
   </video>
-  
+
 - **Avances del 21/02/2025:**  
   ![Avance 21 de feb](/express/express_21-02-2025_1.jpeg)  
   ![Avance 21 de feb](/express/express_21-02-2025_2.jpeg)  
@@ -91,8 +91,8 @@ Además de las mejoras planificadas, se han llevado a cabo tareas específicas e
   ![Avance 21 de feb](/express/express_21-02-2025_4.jpeg)
 
   - **Avances del 10/03/2025:**  
-  ![Avance 10 de mar](/express/express_10-03-2025_1.jpeg)  
-  ![Avance 10 de mar](/express/express_10-03-2025_2.jpeg)  
+    ![Avance 10 de mar](/express/express_10-03-2025_1.jpeg)  
+    ![Avance 10 de mar](/express/express_10-03-2025_2.jpeg)
 
 ---
 

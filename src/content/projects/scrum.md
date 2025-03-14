@@ -2,9 +2,9 @@
 title: Maquina de Scrum
 description: Mejoras en el entrenamiento de primeras lineas para el scrum.
 goal: 990000
-amount_raised: 0
-amount_used: 0
-status: in_progress
+amount_raised: 990000
+amount_used: 990000
+status: completed
 image: /scrum/maquina.png
 ---
 

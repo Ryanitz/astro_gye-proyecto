@@ -14,12 +14,12 @@ const tipoDeCambioAvg = datos["tipo de cambio avg"];
 const totalDollarAmountRaised = Math.round(
   Object.entries(datos)
     .filter(([key]) => key !== "tipo de cambio avg")
-    .reduce((acc, [, amount]) => acc + amount, 0),
+    .reduce((acc, [, amount]) => acc + amount, 0)
 );
 
 // Calcular el total recaudado en pesos
 const totalPesoAmountRaised = Math.round(
-  totalDollarAmountRaised * tipoDeCambioAvg,
+  totalDollarAmountRaised * tipoDeCambioAvg
 );
 
 // Función para agregar puntos a un número
@@ -49,7 +49,13 @@ const addDotsToNumber = (number: number) =>
       <p
         class="text-5xl font-bold text-blue-600 mb-2 flex items-center justify-center"
       >
-        $ {addDotsToNumber(totalPesoAmountRaised)}
+        $ {
+          addDotsToNumber(
+            totalInvestment > totalPesoAmountRaised
+              ? totalInvestment
+              : totalPesoAmountRaised
+          )
+        }
       </p>
     </div>
   </div>

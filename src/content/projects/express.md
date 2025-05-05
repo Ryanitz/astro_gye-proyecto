@@ -18,27 +18,27 @@ Las obras ya comenzaron con el objetivo de tenerlo listo antes del primer partid
 
 ### Infraestructura y diseño
 
-- **Reemplazo de aberturas:** para mejorar la iluminación y la ventilación _(Por tiempos de entrega, se realizará en una segunda etapa o posterior al primer 3T)_.
+- **Reemplazo de aberturas:** para mejorar la iluminación y la ventilación _(Por tiempos de entrega y presupuesto, se realizará en una segunda etapa)_.
   ![Aberturas](/express/aberturas.png)
-- **Instalación de nuevas luminarias:** para una mejor ambientación.  
+- **Instalación de nuevas luminarias:** para una mejor ambientación. **REALIZADO ✔ [Ver detalle](#-detalles-de-tareas-realizadas)** 
   ![Luminarias](/express/luminarias.png)
-- **Renovación del mobiliario:** para mayor comodidad.  
+- **Renovación del mobiliario:** para mayor comodidad. **REALIZADO ✔ [Ver detalle](#-detalles-de-tareas-realizadas)**
   ![Muebles](/express/muebles.png)
-- **Decoración:** para darle un toque personalizado al espacio _(Por tiempos de entrega, se realizará en una segunda etapa o posterior al primer 3T)_.
+- **Decoración:** para darle un toque personalizado al espacio _(En proceso...)_.
 
 ### Obras principales
 
-- **Construcción de una nueva barra de cemento alisado.**  
+- **Construcción de una nueva barra de cemento.**   **REALIZADO ✔ [Ver detalle](#-detalles-de-tareas-realizadas)**
   ![Barra](/express/barra.png)
-- **Instalación de un hogar a leña en el sector "living".**  
+- **Instalación de un hogar a leña en el sector "living".**  **REALIZADO ✔ [Ver detalle](#-detalles-de-tareas-realizadas)**
   ![Chimenea](/express/chimenea.png)
-- **Incorporación de puertas corredizas tipo granero:** para mayor integración de los espacios.  
+- **Incorporación de puertas corredizas tipo granero:** para mayor integración de los espacios. _(Por tiempos de entrega y presupuesto, se realizará en una segunda etapa)_.  
   ![Puerta](/express/puerta.png)
 
 ### Detalles adicionales
 
-- **Pintura total** del salón.
-- Aplicación de **cemento alisado** sobre la barra existente frente a la parrilla.
+- **Pintura total** del salón. **REALIZADO ✔ [Ver detalle](#-detalles-de-tareas-realizadas)**
+- Aplicación de **cemento** sobre la barra existente frente a la parrilla. **REALIZADO ✔ [Ver detalle](#-detalles-de-tareas-realizadas)**
 - **Revestimiento de paredes** del sector "living", incluyendo la eliminación de la persiana en desuso.
 
 ---
@@ -72,9 +72,35 @@ Además de las mejoras planificadas, se han llevado a cabo tareas específicas e
 - **Pintura de paredes:** Se pintó la totalidad de las paredes.
 - **Pintura exterior:** Se renovó la pintura en el exterior del inmueble.
 
+### Carpintería
+
+- **Revestimiento de pared:** Se colocó un nuevo revestimiento de madera en la pared de la nueva barra, barra existente y tapa de termotanque.
+
+### Electrodomésticos
+
+- **Instalacion de nuevo termotanque:** Se instaló un nuevo termotanque para mejorar el suministro de agua caliente.
+
 ---
 
 ## 📷 Avance de obras
+
+Estan ordenados de lo más reciente a lo más antiguo.
+
+- **Avances del 14/04/2025:**  
+  ![Avance 14 de abril](/express/express_05-05-2025_1.jpeg)  
+  ![Avance 14 de abril](/express/express_05-05-2025_2.jpeg)
+  ![Avance 14 de abril](/express/express_05-05-2025_3.jpeg)
+  ![Avance 14 de abril](/express/express_05-05-2025_4.jpeg)
+
+- **Avances del 10/03/2025:**  
+  ![Avance 10 de mar](/express/express_10-03-2025_1.jpeg)  
+  ![Avance 10 de mar](/express/express_10-03-2025_2.jpeg)
+
+- **Avances del 21/02/2025:**  
+  ![Avance 21 de feb](/express/express_21-02-2025_1.jpeg)  
+  ![Avance 21 de feb](/express/express_21-02-2025_2.jpeg)  
+  ![Avance 21 de feb](/express/express_21-02-2025_3.jpeg)  
+  ![Avance 21 de feb](/express/express_21-02-2025_4.jpeg)
 
 - **Desarmado de la barra** del salón y la cocina para comenzar con las nuevas barras de cemento alisado.  
   ![Espacio para la barra](/express/avance1.png)
@@ -83,16 +109,6 @@ Además de las mejoras planificadas, se han llevado a cabo tareas específicas e
   <video controls style="width: 100%; max-width: 600px; margin: auto;">
     <source src="/express/avance2.webm">
   </video>
-
-- **Avances del 21/02/2025:**  
-  ![Avance 21 de feb](/express/express_21-02-2025_1.jpeg)  
-  ![Avance 21 de feb](/express/express_21-02-2025_2.jpeg)  
-  ![Avance 21 de feb](/express/express_21-02-2025_3.jpeg)  
-  ![Avance 21 de feb](/express/express_21-02-2025_4.jpeg)
-
-  - **Avances del 10/03/2025:**  
-    ![Avance 10 de mar](/express/express_10-03-2025_1.jpeg)  
-    ![Avance 10 de mar](/express/express_10-03-2025_2.jpeg)
 
 ---
 
